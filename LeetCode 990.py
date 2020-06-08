@@ -17,7 +17,11 @@ class Solution:
         if faa != fab:
             self.fa[fab] = faa
 
-    def equationsPossible(self, equations: List[str]) -> bool:
+    def equationsPossible(self, equations):
+        """
+        :param equations: List[str]
+        :return: bool
+        """
         equations.sort(key=lambda x: 0 if x[1] == '=' else 1)
         for eqt in equations:
             a = ord(eqt[0]) - ord('a')
