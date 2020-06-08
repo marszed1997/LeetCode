@@ -1,3 +1,6 @@
+# https://leetcode-cn.com/problems/paint-house-iii/
+
+
 class Solution:
     def __init__(self):
         self.dp = [[[-1 for _ in range(30)] for _ in range(110)] for _ in range(110)]
@@ -58,6 +61,3 @@ class Solution:
             return ans
         else:
             return self.dp[m][target][houses[-1]]
-
-
-
